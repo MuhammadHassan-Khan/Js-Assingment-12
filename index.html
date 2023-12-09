@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        document.write("<h1>Q1</h1>")
+        var ran = Math.random()
+        document.write("Number :" + ran + "<br>");
+
+        var roun = Math.round(ran * 10)
+        document.write("Round Off value :" + roun + "<br>");
+
+        var flor = Math.floor(ran * 10)
+        document.write("Floor :" + flor + "<br>");
+        var cl = Math.ceil(ran * 10)
+        document.write("Ceil :" + cl + "<br>");
+
+
+
+
+
+        document.write("<h1>Q2</h1>")
+
+        // Negative floating point number input
+
+        var userInput = -20
+
+        // Check if the input is a valid number
+        if (!isNaN(userInput) && parseFloat(userInput) < 0) {
+            // Display the number
+            document.write("Number: " + userInput + "<br>");
+
+            // Round off value
+            var roundOff = Math.round(userInput);
+            document.write("Round off value: " + roundOff + "<br>");
+
+            // Floor value
+            var floorValue = Math.floor(userInput);
+            document.write("Floor value: " + floorValue + "<br>");
+
+            // Ceil value
+            var ceilValue = Math.ceil(userInput);
+            document.write("Ceil value: " + ceilValue + "<br>");
+        } else {
+            document.write("Invalid input. Please enter a negative floating point number.");
+        }
+
+
+        document.write("<h1>Q3</h1>")
+
+
+        var ran = Math.random() * 5 + 1
+        var roun = Math.round(ran)
+
+        document.write("Dice Value:" + roun + "<br>");
+
+
+
+        var ran = Math.random() * 5 + 1
+        var roun = Math.round(ran)
+
+        document.write("Dice Value:" + roun);
+
+        document.write("<h1>Q4</h1>")
+        var tos = Math.random() * 1 + 1
+        var rou = Math.round(tos)
+        console.log(rou);
+        if (rou === 1) {
+            document.write("Head")
+        } else {
+            document.write("Tell")
+
+        }
+
+        document.write("<h1>Q5</h1>")
+        var randomA = Math.random() * 99 + 1
+        var round = Math.round(randomA)
+        document.write("Random Number between 1 to 100 :" + round + "<br>")
+
+
+
+
+        document.write("<h1>Q6</h1>")
+        var userInput = prompt("Enter a number:");
+        var number = parseFloat(userInput);
+        if (number < 0) {
+            number = number * -1; // Multiply by -1 to get the absolute value
+        }
+        document.write("The absolute value of the number is: " + number);
+
+
+
+
+
+
+        document.write("<h1>Q8</h1>")
+        var input = prompt("Enter a number between 1 to 10 if your number is equal to secret code so you will winner")
+        var randB = Math.random() * 9 + 1
+        var rouA = Math.round(randB)
+        console.log(rouA);
+
+        if (input == rouA) {
+            document.write("You are the winner" + "&#128512;")
+        } else {
+            document.write("Sorry! you are not winner" + "&#128517;")
+        }
+
+
+
+    </script>
+</body>
+
+</html>
